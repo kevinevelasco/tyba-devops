@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Cat View</title>
+    <style>
+        h1 {
+            color: #2c3e50;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+<h1 th:text="${title}">Título aquí</h1>
+<div>
+    <img th:src="'data:image/jpeg;base64,' + ${cat}" alt="Random Cat"/>
+</div>
+</body>
+</html>
